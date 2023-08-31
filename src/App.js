@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import HenryClothes from './Henry.Clothes';
 
 function App() {
   return (
