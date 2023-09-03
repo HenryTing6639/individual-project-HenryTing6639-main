@@ -11,7 +11,8 @@ const App = (propos) => {
     <div>
       <h1>HenzaClothes</h1>
       <ul>
-    {HenzaClothes.map(HenzaClothes => <li key={HenzaClothes.id}>{HenzaClothes.content}</li>)}
+      <li>{HenzaClothes[1].content}</li>
+      <li>{HenzaClothes[2].content}</li>
      
 
       </ul>
