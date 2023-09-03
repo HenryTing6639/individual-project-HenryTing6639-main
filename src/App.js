@@ -1,9 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState, useEffect } from 'react';
-import HenryClothes from './Henry.Clothes';
+import HenzaClothes from './Henza.Clothes';
 
-function App() {
+
+const App = (propos) => {
+  
+  const {HenzaClothes} = propos
+
+  return (
+    <div>
+      <h1>HenzaClothes</h1>
+      <ul>
+    {HenzaClothes.map(HenzaClothes => <li key={HenzaClothes.id}>{HenzaClothes.content}</li>)}
+     
+
+      </ul>
+    </div>
+  )
+
   return (
     <div className="App">
       <header className="App-header">
